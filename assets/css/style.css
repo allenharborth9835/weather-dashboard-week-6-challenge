@@ -20,13 +20,12 @@ header h1{
     text-shadow: 0 0 10px rgba(0,0,0, 0.5);
 }
 #search-bar{
-    text-align: center;
     background-color: var(--secondary);
 }
 body{
     background-color: var(--outer2-color);
     margin: 0;
     padding: 0;
-    color:white;
+    color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
