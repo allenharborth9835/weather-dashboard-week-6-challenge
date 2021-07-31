@@ -52,6 +52,22 @@ header h1{
     padding:20px 20px 0 20px;
 
 }
+.uvLow{
+    background-color: green;
+}
+.uvMed{
+    background-color: yellow;
+}
+.uvHi{
+    background-color: orangered;
+}
+.uvEh{
+    background-color: red;
+}
+.uvEx{
+    background-color: black;
+    color:white;
+}
 body{
     background-color: var(--outer2-color);
     margin: 0;

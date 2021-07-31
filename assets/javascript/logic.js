@@ -56,10 +56,22 @@ function search(city){
         }).then(response=> response.json())
         .then(function(data){
             console.log(data)
-            let uv= data.daily[0].uvi;
-            $("#weather").append(`<p>uv:${uv}</p>`);
+            let uv = data.daily[0].uvi;
+            let uvIndex = ""
+            if(uv<=3)
+                uvIndex = "uvLow";
+            else if(uv<=5 & uv>3)
+                uvIndex = "uvMed";
+            else if(uv<=8 & uv>5)
+                uvIndex = "uvHi";
+            else if(uv<=11 & uv>8)
+                uvIndex = "uvEh";
+            else
+                uvIndex = "uvEx";
+
+            $("#weather").append(`<p>uv:<span class="badge badge-pill ${uvIndex}">${uv}<span></p>`);
             for(let i = 0; i<5; i++){
-                let date = `${new Date().getMonth()+1}/${new Date().getDate()+1+i}/${new Date().getFullYear()}`;
+                let date = moment().add((i+1), 'days').format('l');
                 let source = `http://openweathermap.org/img/wn/${data.daily[i].weather[0].icon}@2x.png`;
                 console.log(source)
                 let temp = data.daily[i].temp.day;
