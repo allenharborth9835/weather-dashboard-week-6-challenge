@@ -1,10 +1,8 @@
 :root{
     --primary: #001f3d;
-    --secondary: #717171
+    --secondary: #039be5;
 }
 header{
-    
-
     top: 0;
     background-color: var(--primary);
     color:white;
@@ -21,6 +19,38 @@ header h1{
 }
 #search-bar{
     background-color: var(--secondary);
+    color: var(--primary);
+}
+#search-bar form{
+    padding: 30px 0 0 20px;
+}
+#search-bar form button{
+    background-color: var(--primary);
+    color: white;
+    border:none;
+}
+#citys{
+    padding: 30px 0 0 20px;
+}
+.cityBtn{
+    margin-top: 10px;
+    background-color: var(--primary);
+    color: white;
+    border:none;
+}
+#weather{
+    margin-left: 88px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#weather p{
+    margin: 0;
+}
+.forcastCard{
+    background-color: var(--primary);
+    color: white;
+    padding:20px 20px 0 20px;
+
 }
 body{
     background-color: var(--outer2-color);
