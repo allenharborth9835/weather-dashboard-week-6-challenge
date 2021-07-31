@@ -30,7 +30,7 @@ header h1{
     border:none;
 }
 #citys{
-    padding: 30px 0 0 20px;
+    padding: 30px 0 20px 20px;
 }
 .cityBtn{
     margin-top: 10px;
@@ -38,13 +38,24 @@ header h1{
     color: white;
     border:none;
 }
+.content{
+    background-color: white;
+}
 #weather{
-    margin-left: 88px;
+    margin-left: 10px;
     margin-top: 20px;
     font-weight: bold;
 }
 #weather p{
     margin: 0;
+}
+#daily{
+    margin:50px 0 0 0;
+}
+.cardCont{
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 0;
 }
 .forcastCard{
     background-color: var(--primary);
