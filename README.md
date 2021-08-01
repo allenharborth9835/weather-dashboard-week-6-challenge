@@ -7,7 +7,7 @@ in this lesson, we learned how to use the fetch function to pull data from a ser
 
 
 ## Screenshots
-![App Screenshot](assets/Images/weather-app.JPG)
+![App Screenshot](assets/images/weather-app.JPG)
 
 ## Documentation
 
